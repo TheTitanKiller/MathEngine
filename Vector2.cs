@@ -15,7 +15,7 @@ namespace MathEngine
         public double Y { get; init; }
         public double Magnitude { get; init; }
 
-        public Vector2(Point x, Point y) => (X, Y, Magnitude) = (y.X - x.X, y.Y - x.Y, y.Distance(x));
+        public Vector2(Point2D x, Point2D y) => (X, Y, Magnitude) = (y.X - x.X, y.Y - x.Y, y.Distance(x));
 
         public Vector2(double x, double y) => (X, Y, Magnitude) = (x, y, Math.Sqrt(x * x + y * y));
 
