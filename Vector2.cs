@@ -42,5 +42,7 @@ namespace MathEngine
         public static Vector2 operator *(Vector2 left, double right) => right * left;
 
         public static Vector2 operator /(Vector2 left, double right) => 1 / right * left;
+
+        public override string ToString() => $"Vector2({X}, {Y})";
     }
 }

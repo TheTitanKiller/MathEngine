@@ -25,5 +25,7 @@ namespace MathEngine
         public static bool operator ==(Point2D left, Point2D right) => left.Equals(right);
 
         public static bool operator !=(Point2D left, Point2D right) => !(left == right);
+
+        public override string ToString() => $"Point2D({X}, {Y})";
     }
 }

@@ -52,5 +52,7 @@ namespace MathEngine
 
         public static implicit operator Vector2(Vector3 vector) => new(vector.X, vector.Y);
         public static implicit operator Vector3(Vector2 vector) => new(vector.X, vector.Y, 0);
+
+        public override string ToString() => $"Vector3({X}, {Y}, {Z})";
     }
 }

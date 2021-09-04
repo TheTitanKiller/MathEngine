@@ -2,7 +2,8 @@
 
 namespace MathEngine
 {
-    public class Main
+    public class Tests
     {
+        
     }
 }

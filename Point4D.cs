@@ -38,5 +38,7 @@ namespace MathEngine
         public static implicit operator Point3D(Point4D point) => new(point.X, point.Y, point.Z);
         public static implicit operator Point4D(Point2D point) => new(point.X, point.Y, 0, 0);
         public static implicit operator Point4D(Point3D point) => new(point.X, point.Y, point.Z, 0);
+
+        public override string ToString() => $"Point4D({X}, {Y}, {Z}, {T})";
     }
 }
